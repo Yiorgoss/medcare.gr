@@ -2,25 +2,25 @@ name: "sync-to-s3"
 desription: "Sync build directory with s3 bucket"
 
 on:
-    push:
-        branches:
-            - master
+  push:
+    branches:
+    - master
 
 jobs:
-  sync-with-s3:
-    runs-on: ubuntu-latest 
+  build-and-sync-s3:
+    runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v1
-     - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: "eu-central-1"
+    - name: Checkout
+      uses: actions/checkout@v1
 
-     - name: Build 
-        run: npm run build
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: eu-central-1
 
-     - name: Sync
-        run: aws s3 sync build/ s3://luigi-medcare --delete --dryrun
-            
+    - name: Deploy static site to S3 bucket
+      run: aws s3 sync ./build/ s3://luigi-medcare --delete             
+   
+   

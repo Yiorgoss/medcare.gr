@@ -19,8 +19,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: eu-central-1
 
-    - name: Deploy static site to S3 bucket
-      run: npm build
+    - name: Build  
+      run: npm run-script build
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./build/ s3://luigi-medcare --delete             
    

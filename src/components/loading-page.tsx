@@ -5,7 +5,7 @@ import logo from "../assets/images/logo-small.svg";
 export default function LoadingPage() {
     return (
         <>
-            <img src={logo} />
+            <img src={logo} alt="logo" />
             <span> HITHITHI </span>
         </>
     );

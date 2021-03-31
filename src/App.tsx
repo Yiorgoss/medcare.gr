@@ -5,12 +5,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home, Company, Fleet, Services, Contact } from "./pages";
 import Header from "./components/header";
 import LoadingPage from "./components/loading-page";
-import Footer from "./components/footer";
+//import Footer from "./components/footer";
 
 export default function App() {
     const [isLoading, setLoading] = useState(true);
 
-    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
     useEffect(() => {
         setTimeout(() => setLoading(false), 20);

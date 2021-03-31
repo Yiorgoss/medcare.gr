@@ -1,0 +1,25 @@
+.services {
+    margin-top: 70px;
+
+    .services-wrapper {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        font-size: $font-small;
+        font-weight: 350;
+        line-height: 1.4;
+
+        ul {
+            font-size: $font-small;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .services {
+        .services-wrapper {
+            font-size: 18px; 
+            font-weight: 250;
+            margin: 10px 10px 10px 10px;
+        }
+    }
+}

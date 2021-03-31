@@ -1,0 +1,52 @@
+.landing {
+    .bg {
+        top: 0;
+        height: 100vh;
+        background-size: cover;
+        background-position: center bottom;
+        background-attachment: fixed;
+    }
+
+    div {
+        width: 100%;
+        display: block;
+        margin-bottom: 100px;
+
+        h1 {
+            padding-top: 30px;
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 15px;
+            text-transform: uppercase;
+        }
+        p {
+            text-align: center;
+            line-height: 1.6;
+            font-size: 22px;
+        }
+    }
+
+    .image-one {
+        background-image: url("../../assets/images/2ERTEA.jpg");
+    }
+    .image-two {
+        background-image: url("../../assets/images/2MARVEA.jpg");
+        height: 50vh;
+    }
+    .image-three {
+        background-image: url("../../assets/images/3LIBERA.jpg");
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .bg {
+        top: 0;
+        width: 100%;
+        background-size: cover;
+        background-position: center bottom;
+        background-attachment: fixed;
+    }
+}
+

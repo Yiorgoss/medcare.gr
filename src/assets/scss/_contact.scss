@@ -1,0 +1,52 @@
+.contact-wrapper {
+    margin-top: $header-height;
+
+    .contact-main {
+        padding: 50px 40px;
+        text-align: center;
+
+        .title {
+            font-weight: 300;
+            font-size: $font-large;
+        }
+
+        .contact {
+            font-weight: 300;
+        }
+
+        .personel {
+            margin-top: 40px;
+
+            .personel-grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 40px;
+
+                .personel-container {
+                    font-weight: 300;
+
+                    h1 {
+                        font-size: $font-medium;
+                        font-weight: 350;
+                    }
+                }
+            }
+        }
+        .bold {
+            font-weight: 450;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contact-wrapper {
+        .contact-main {
+            .personel {
+                .personel-grid-container {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

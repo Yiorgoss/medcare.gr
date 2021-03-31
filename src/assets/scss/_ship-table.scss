@@ -1,0 +1,58 @@
+.fleet {
+    margin-top: 70px;
+
+    .table-wrapper {
+        margin-top: 70px;
+        overflow: scroll;
+        
+        table {
+            margin: 50px 0;
+        }
+
+        th {
+            font-size: $font-large;
+            background: $white;
+            height: 70px;
+            text-align: center;
+        }
+
+        tbody {
+            display: block;
+        }
+
+        tr {
+            display: grid;
+            background: $white;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        tr:nth-child(odd) {
+            background: $blue-main;
+        }
+
+        td {
+            margin: 40px;
+            font-size: $font-small;
+            font-weight: 300;
+            text-align: center;
+
+            .MuiSvgIcon-root {
+                position: absolute;
+                float: right;
+                margin-left: 20px;
+            }
+        }
+
+        .expanded-row-content {
+            grid-column: 1/-1;
+            height: 100%;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    td {
+        .ship-table-image {
+            width: 100%;
+        }
+    }
+}

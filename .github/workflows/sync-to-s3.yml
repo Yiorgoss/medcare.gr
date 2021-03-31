@@ -1,0 +1,20 @@
+name: "sync-to-s3"
+desription: "Sync build directory with s3 bucket"
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+  sync-with-s3:
+
+    runs-on: ubuntu-latest 
+    steps:
+
+        name: Build 
+        run: npm run build
+
+        name: Sync
+        run: aws s3 sync build/ s3://luigi-medcare
+            

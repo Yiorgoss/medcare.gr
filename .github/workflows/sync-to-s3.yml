@@ -1,5 +1,4 @@
 name: "sync-to-s3"
-desription: "Sync build directory with s3 bucket"
 
 on:
   push:

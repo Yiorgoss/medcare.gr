@@ -3,10 +3,11 @@
 
     .table-wrapper {
         margin-top: 70px;
-        overflow: scroll;
-        
+
         table {
             margin: 50px 0;
+            border-collapse: collapse;
+            border-spacing: 0;
         }
 
         th {

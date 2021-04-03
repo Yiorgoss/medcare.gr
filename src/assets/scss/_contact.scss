@@ -7,7 +7,7 @@
 
         .title {
             font-weight: 300;
-            font-size: $font-large;
+            font-size: $font-medium;
         }
 
         .contact {
@@ -24,14 +24,20 @@
 
                 .personel-container {
                     font-weight: 300;
+                    text-align: center;
 
                     h1 {
                         font-size: $font-medium;
-                        font-weight: 350;
+                        font-weight: 400;
                     }
 
-                    ul {
-                        list-style-type: none;
+                    .personel-name-container {
+                        font-size: $font-small;
+                        font-weight: 100;
+
+                        .personel-name-item {
+                            text-align: center;
+                        }
                     }
                 }
             }

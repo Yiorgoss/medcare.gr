@@ -29,11 +29,11 @@ export default function Contact() {
                         {personelList.map((personel, index) => (
                             <div className="personel-container" key={index}>
                                 <h1>{personel.title}</h1>
-                                <ul className="personel-name-container">
+                                <div className="personel-name-container">
                                     {personel.names.map((name, index) => (
-                                        <li key={index}>{name}</li>
+                                        <div className="peronsel-name-item" key={index}>{name}</div>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
                         ))}
                     </div>

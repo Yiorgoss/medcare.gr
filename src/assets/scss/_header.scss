@@ -9,8 +9,13 @@
     z-index: 100;
     align-items: center;
 
+    -webkit-box-shadow: 5px 19px 50px -1px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 19px 50px -1px rgba(0, 0, 0, 0.57);
+
     .header-logo {
+        height: 100px;;
         margin-left: 50px;
+        margin-top: 40px;
         overflow: hidden;
         height: 100%;
         width: 120px;
@@ -39,6 +44,7 @@
                 text-decoration: none;
                 padding: 10px 20px 10px 20px;
                 color: $black;
+                font-size: $font-medium;
                 font-weight: 400;
 
                 &:visited {
@@ -47,12 +53,9 @@
 
                 &:hover {
                     color: $white;
-                    background: $black;
+                    background: $blue;
                     border-radius: 7px;
                 }
-            }
-            li:last-child {
-                border-right: none;
             }
         }
     }
@@ -97,7 +100,6 @@
                 margin: 0;
                 margin-top: 50px;
 
-
                 li {
                     text-align: left;
                     height: $header-height;
@@ -115,7 +117,6 @@
                     }
                 }
             }
-
         }
         &.active {
             .header {

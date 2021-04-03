@@ -5,7 +5,7 @@ import { Banner } from "../components/common"
 export default function Services() {
     return (
         <section className="services">
-            { /*<Banner title="Services" />*/ }
+            <Banner title="Services" />
             <div className="services-wrapper container">
                 <div className="services-main-text">
                     <p>

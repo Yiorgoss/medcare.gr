@@ -66,7 +66,10 @@ export default function Header() {
                 <ul className="header-list">
                     {headerLinks.map((link, index) => (
                         <li key={index}>
-                            <Link to={link.path} onClick={() => setOpen(false)}> {link.title} </Link>
+                            <Link to={link.path} onClick={() => setOpen(false)}>
+                                {" "}
+                                {link.title}{" "}
+                            </Link>
                         </li>
                     ))}
                 </ul>

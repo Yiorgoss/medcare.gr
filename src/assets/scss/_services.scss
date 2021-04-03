@@ -2,8 +2,9 @@
     margin-top: 70px;
 
     .services-wrapper {
-        margin-top: 100px;
+        //margin-top: $header-height;
         margin-bottom: 100px;
+        padding-top: 30px;
         font-size: $font-small;
         font-weight: 350;
         line-height: 1.4;

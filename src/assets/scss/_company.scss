@@ -1,29 +1,32 @@
-.company-container {
-    margin-left: 300px;
-    padding-top: 70px;
-    display: block;
+.company {
+    display: flex;
 
-    .company-content {
-        margin: 80px 100px;
-        line-height: 1.4;
-        font-weight: 400;
+    .company-container {
+        padding-top: 70px;
+        display: block;
 
-        span,
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-weight: 500;
-            font-size: $font-large;
-            padding: 20px 0 10px 0;
-        }
+        .company-content {
+            margin: 80px 100px;
+            line-height: 1.4;
+            font-weight: 400;
 
-        li {
-            margin: 10px 0;
-        }
-        .company-text {
-            margin-top: 30px;
-            font-size: $font-small;
+            span,
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-weight: 500;
+                font-size: $font-large;
+                padding: 20px 0 10px 0;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+            .company-text {
+                margin-top: 30px;
+                font-size: $font-small;
+            }
         }
     }
 }

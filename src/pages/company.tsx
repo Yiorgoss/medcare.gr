@@ -23,7 +23,7 @@ export default function Company() {
     return (
         <section className="company">
             <SideBar/>
-            <div className="company-container">
+            <div className="company-container container">
                 <div className="company-content">
                     <Banner title={title} />
                     <div className="company-text" dangerouslySetInnerHTML={{ __html: text }} />

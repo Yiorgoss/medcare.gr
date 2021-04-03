@@ -2,7 +2,7 @@ import React from "react";
 
 import { ShipTable, Banner } from "../components/common";
 
-import shipList from "../assets/ship-list";
+import { shipList } from "../assets/data/";
 
 export default function Fleet() {
     return (

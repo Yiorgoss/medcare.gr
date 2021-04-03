@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 import { SideBar, Banner } from "../components/common";
 
-import statementsList from "../assets/statements";
+import { statementList } from "../assets/data/";
 import { statementListType } from "../types";
 
 interface CompanyParams {
@@ -16,7 +16,7 @@ export default function Company() {
     // the file assets/statements.js
     // unpack the text and display dangerously on page
     const url_params = useParams<CompanyParams>();
-    const params = (statementsList as statementListType)[url_params.statement];
+    const params = (statementList as statementListType)[url_params.statement];
 
     const { title, text } = params ?? {title: "404", text: "Resource not found"}
 

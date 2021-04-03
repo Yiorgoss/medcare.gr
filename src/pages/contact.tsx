@@ -2,7 +2,7 @@ import React from "react";
 
 import { Banner } from "../components/common";
 
-import personelList from "../assets/personel-list";
+import { personelList } from "../assets/data/";
 
 export default function Contact() {
     return (

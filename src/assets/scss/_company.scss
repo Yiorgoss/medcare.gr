@@ -3,7 +3,6 @@
 
     .company-container {
         padding-top: 70px;
-        display: block;
 
         .company-content {
             margin: 80px 100px;
@@ -33,7 +32,10 @@
 
 @media screen and (max-width: 900px) {
     .company {
-        display: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding:0;
 
         .company-container {
             margin: 0;

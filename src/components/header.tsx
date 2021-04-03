@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import MenuIcon from "@material-ui/icons/Menu";
 
-import LogoSmall from "../assets/images/logo-small.svg";
+//import logoHeader from "../assets/images/logo-header.svg";
+import logoSmall from "../assets/images/logo-small.svg"
 
 //import LogoSmall from "../logo.svg";
 
@@ -59,7 +60,7 @@ export default function Header() {
         <section className={`header-wrapper ${open && "active"}`} ref={node}>
             <div className="header-logo">
                 <a href="/">
-                    <img src={LogoSmall} alt="Medcare Logo" />
+                    <img src={logoSmall} alt="Medcare Logo" />
                 </a>
             </div>
             <div className="header">

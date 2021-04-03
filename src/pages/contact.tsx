@@ -25,7 +25,6 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="personel">
-                    <h1 className="title"> Personel </h1>
                     <div className="personel-grid-container">
                         {personelList.map((personel, index) => (
                             <div className="personel-container" key={index}>

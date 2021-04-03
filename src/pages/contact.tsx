@@ -2,6 +2,8 @@ import React from "react";
 
 import { Banner } from "../components/common";
 
+import personelList from "../assets/personel-list";
+
 export default function Contact() {
     return (
         <section className="contact-wrapper">
@@ -25,50 +27,16 @@ export default function Contact() {
                 <div className="personel">
                     <h1 className="title"> Personel </h1>
                     <div className="personel-grid-container">
-                        <div className="personel-container">
-                            <h1>General Manager</h1>
-                            <span>Grigoris Moutzouris</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1>Environmental / Safety Marine Manager</h1>
-                            <span>Isidoros Koukloubakos</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1>Chartering departnent</h1>
-                            <span>Richard Marns</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1> Operation department</h1>
-                            <span>Cpt. Ioannis Karaiskakis</span>
-                            <span>Mary Parisi</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1>Technical department</h1>
-                            <span>Grigoris Moutzouris</span>
-                            <span>Panagiotis Perivolarakis</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1>Marine Supt.</h1>
-                            <span>Kimon Demertzis</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1>Purchasing department</h1>
-                            <span>Giannis Stergiopoulos</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1>Crew department</h1>
-                            <span>Kalliopi Lagoumtzi</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1>Accounting department</h1>
-                            <span>Magda Vlassiadou</span>
-                            <span>Georgios Korlos</span>
-                            <span>Efthymia Kardasi</span>
-                        </div>
-                        <div className="personel-container">
-                            <h1>Secretary</h1>
-                            <span>Konstantina Afali</span>
-                        </div>
+                        {personelList.map((personel, index) => (
+                            <div className="personel-container" key={index}>
+                                <h1>{personel.title}</h1>
+                                <ul className="personel-name-container">
+                                    {personel.names.map((name, index) => (
+                                        <li key={index}>{name}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

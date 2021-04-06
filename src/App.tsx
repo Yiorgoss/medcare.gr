@@ -25,9 +25,9 @@ export default function App() {
                     <Switch>
                         <Route exact path="/" render={() => <Home />} />
                         <Route exact path="/company" render={() => <Company />} />
-                        <Route path="/company/:statement" render={() => <Company />} />
+                        <Route exact path="/services/:service" render={() => <Services />} />
+                        <Route exact path="/company/:statement" render={() => <Company />} />
                         <Route path="/fleet" render={() => <Fleet />} />
-                        <Route path="/services" render={() => <Services />} />
                         <Route path="/contact" render={() => <Contact />} />
                         <Route render={(): any => 404} />
                     </Switch>

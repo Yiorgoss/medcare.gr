@@ -1,8 +1,8 @@
 .banner-section {
-    margin-top:$header-height;
+    margin-top: $header-height;
 
     .banner {
-        background-image: url("../images/ship5.jpg");
+        background-image: url("../images/ship_9.jpg");
         background-position: center center;
         background-attachment: fixed;
         color: white;
@@ -11,10 +11,17 @@
         display: table-cell;
         vertical-align: middle;
 
-        h1 {
-            text-align: center;
-            font-size: 50px;
-            font-weight: 400;
+        .title-background {
+            display: flex;
+            width: auto;
+            justify-content: space-around;
+
+            .title {
+                font-size: $font-large;
+                font-weight: 500;
+                background: rgba(0, 0, 0, 0.45);
+                padding: 20px 40px;;
+            }
         }
     }
 }

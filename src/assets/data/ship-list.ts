@@ -5,7 +5,7 @@ const shipList = [
         "year": 2006,
         "flag": "Malta",
         "dwt": 40000,
-        "images": []
+        "images": ["libera_1.jpg", "libera_2.jpg", "libera_3.jpg", "libera_4.jpg"]
     },
     {
         "name": "Marvea",
@@ -13,7 +13,7 @@ const shipList = [
         "year": 2006,
         "flag": "Malta",
         "dwt": 40000,
-        "images": []
+        "images": ["marvea_1.jpg","marvea_2.jpg","marvea_3.jpg",]
     },
     {
         "name": "Ertea",
@@ -21,7 +21,7 @@ const shipList = [
         "year": 2009,
         "flag": "Liberia",
         "dwt": 55000,
-        "images": []
+        "images": ["ertea_1.jpg","ertea_2.jpg", "ertea_3.jpg"]
     },
     {
         "name": "Eraclea",
@@ -29,15 +29,15 @@ const shipList = [
         "year": 2010,
         "flag": "Liberia",
         "dwt": 55000,
-        "images": ["1ERACLEA.jpg","2ERACLEA.jpg"]
+        "images": ["eraclea_1.jpg", "eraclea_2.jpg", "eraclea_3.jpg", "eraclea_4.jpg"]
     },
     {
         "name": "Serena M",
         "type": "Oil/Chemical Carrier IMO III",
         "year": 2010,
         "flag": "Malta",
-        "dwt": 39710,
-        "images": []
+        "dwt": 40000,
+        "images": ["serena_m_1.jpg"]
     },
 ]
 

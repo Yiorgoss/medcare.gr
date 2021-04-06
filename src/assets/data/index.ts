@@ -1,5 +1,6 @@
 import shipList from "./ship-list";
+import serviceList from "./service-list";
 import statementList from "./statement-list";
-import personelList from "./personel-list"
+import personelList from "./personel-list";
 
-export { shipList, statementList, personelList }
+export { shipList, serviceList, statementList, personelList };

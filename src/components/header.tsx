@@ -23,7 +23,7 @@ const headerLinks = [
     },
     {
         title: "Services",
-        path: "/services",
+        path: "/services/commercial",
     },
     {
         title: "Contact",

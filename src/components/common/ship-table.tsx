@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { YouTube, ExpandMore } from "@material-ui/icons/";
 
 import { ImageOverlay } from "./";
 import { shipType } from "../../types";
+
+const ShipIFrame = lazy(() => import("./ship-iframe"));
 
 interface shipTableProps {
     shipList: shipType[];
@@ -35,9 +37,11 @@ const TableRow = ({ ship, index }: { ship: shipType; index: number }) => {
                     <span>{ship.name}</span>
                 </td>
             ) : (
-                <td onClick={() => toggleHidden()}>
-                    <span>{ship.name}</span>
-                    <ExpandMoreIcon  />
+                <td onClick={() => toggleHidden()} className="clickable">
+                    <div>
+                        <span>{ship.name}</span>
+                        <ExpandMore />
+                    </div>
                 </td>
             )}
             <td>
@@ -56,8 +60,21 @@ const TableRow = ({ ship, index }: { ship: shipType; index: number }) => {
                 {ship.images.map((image, index) => (
                     <ImageOverlay image={image} key={index} />
                 ))}
+                {ship.iframe && (
+                    <Suspense fallback={<IFrameLoading />}>
+                        <ShipIFrame title={ship.iframe.title} ytURL={ship.iframe.yturl} />
+                    </Suspense>
+                )}
             </td>
         </tr>
+    );
+};
+
+const IFrameLoading = () => {
+    return (
+        <div className="iframe-loading">
+            <YouTube />
+        </div>
     );
 };
 

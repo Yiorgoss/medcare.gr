@@ -37,16 +37,39 @@
             font-weight: 300;
             text-align: center;
 
+            .ship-video {
+                width: 80%;
+                height: 300px;
+            }
+
             .MuiSvgIcon-root {
-                position: absolute;
                 float: right;
-                margin-left: 20px;
+                display: inline;
+                cursor: pointer;
             }
         }
 
         .expanded-row-content {
             grid-column: 1/-1;
             height: 100%;
+            cursor: pointer;
+
+            .iframe-loading {
+                height: 300px;
+                background: white;
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                border: 3px solid grey;
+
+                .MuiSvgIcon-root {
+                    float: none;
+                    font-size: 70px;
+                    color: grey;
+                }
+            }
         }
     }
 }
@@ -55,6 +78,9 @@
         overflow-x: scroll;
         td {
             .ship-table-image {
+                width: 100%;
+            }
+            .ship-video {
                 width: 100%;
             }
         }

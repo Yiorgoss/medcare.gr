@@ -1,15 +1,20 @@
+export interface IFrameType {
+    title: string;
+    yturl: string;
+}
+export interface linkType {
+    title: string;
+    path: string;
+}
+
 export interface shipType {
     name: string;
     type: string;
     year: number;
     flag: string;
     dwt: number;
-    images: string[]
-}
-
-export interface linkType {
-    title: string;
-    path: string;
+    images: string[];
+    iframe?: IFrameType;
 }
 
 export interface statementType {
@@ -31,5 +36,3 @@ export interface serviceListType {
 export interface statementListType {
     [key: string]: statementType;
 }
-
-

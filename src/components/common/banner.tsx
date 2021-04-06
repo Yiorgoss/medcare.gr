@@ -10,9 +10,7 @@ export default function Banner({ image, title }: { image?: string; title?: strin
     return (
         <div className="banner-section">
             <div style={style} className="banner">
-                <div className="title-background">
-                    <span className="title">{title ?? ""}</span>
-                </div>
+                <div className="title-background">{title && <span className="title">{title}</span>}</div>
             </div>
         </div>
     );

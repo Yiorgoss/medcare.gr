@@ -1,5 +1,5 @@
 const personelList = [
-    //empty to handle heirarchy
+    //empty to handle positioning
     {
         title: "",
         names: [""],
@@ -8,7 +8,21 @@ const personelList = [
         title: "General Manager",
         names: ["Grigoris Moutzouris"],
     },
-    //empty to handle heirarchy
+    //empty to handle positioning
+    {
+        title: "",
+        names: [""],
+    },
+    //empty to handle positioning
+    {
+        title: "",
+        names: [""],
+    },
+    {
+        title: "Chartering department",
+        names: ["Richard Marns", "Luigi Morfini"],
+    },
+    //empty to handle positioning
     {
         title: "",
         names: [""],
@@ -18,8 +32,8 @@ const personelList = [
         names: ["Isidoros Koukloubakos"],
     },
     {
-        title: "Chartering department",
-        names: ["Richard Marns", "Luigi Morfini"],
+        title: "Marine Supt.",
+        names: ["Kimon Demertzis"],
     },
     {
         title: "Operation department",
@@ -28,10 +42,6 @@ const personelList = [
     {
         title: "Technical department",
         names: ["Stamatis Marinakis", "Panagiotis Perivolarakis"],
-    },
-    {
-        title: "Marine Supt.",
-        names: ["Kimon Demertzis"],
     },
     {
         title: "Purchasing department",
@@ -44,6 +54,11 @@ const personelList = [
     {
         title: "Accounting department",
         names: ["Magda Vlassiadou", "Georgios Korlos", "Efthymia Kardasi"],
+    },
+    //empty to handle positioning
+    {
+        title: "",
+        names: [""],
     },
     {
         title: "Secretary",

@@ -5,9 +5,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 //import logoHeader from "../assets/images/logo-header.svg";
 //import logoSmall from "../assets/images/logo-small.svg";
-//import logoHeader from "../assets/images/logo-header.svg";
-
-//import LogoSmall from "../logo.svg";
 
 const headerLinks = [
     {
@@ -76,6 +73,7 @@ export default function Header() {
                             </li>
                         ))}
                     </ul>
+                    <div className="header-cover"><i aria-hidden="true"> </i></div>
                 </div>
                 <MenuIcon onClick={() => setOpen(!open)} />
             </div>

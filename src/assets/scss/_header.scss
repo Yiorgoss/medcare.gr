@@ -1,8 +1,10 @@
 .header-container {
-        position: fixed;
-        background-color: $white;
-        height: $header-height;
-        width: 100%;
+    position: fixed;
+    background-color: $white;
+    height: $header-height;
+    width: 100%;
+    top: 0;
+
     .header-wrapper {
         display: flex;
         height: $header-height;
@@ -15,7 +17,7 @@
 
         background: url("../images/logo-header.svg");
         background-repeat: no-repeat;
-        background-position: right bottom;  
+        background-position: right bottom;
         background-size: 100%;
 
         -webkit-box-shadow: 5px 19px 50px -1px rgba(0, 0, 0, 0.57);
@@ -23,11 +25,11 @@
 
         .header-logo {
             top: 0;
-            left:  0;
+            left: 0;
             height: 100px;
             width: 10%;
-            
-            a{
+
+            a {
                 display: block;
                 height: 100%;
                 width: 100%;

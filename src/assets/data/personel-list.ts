@@ -28,7 +28,7 @@ const personelList = [
         names: [""],
     },
     {
-        title: "Environmental / Safety Marine Manager",
+        title: "DPA / SQE",
         names: ["Isidoros Koukloubakos"],
     },
     {

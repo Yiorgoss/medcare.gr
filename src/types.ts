@@ -7,26 +7,36 @@ export interface linkType {
     path: string;
 }
 
+export  interface shipImageStyle {
+    name: string;
+    style: React.CSSProperties;
+}
 export interface shipType {
     name: string;
     type: string;
     year: number;
     flag: string;
     dwt: number;
-    images: string[];
     iframe?: IFrameType;
+    images: shipImageStyle[];
+    
+}
+
+export interface bannerType {
+    image?: string;
+    style?: React.CSSProperties;
 }
 
 export interface statementType {
     title: string;
     text: string;
-    banner?: string;
+    banner?: bannerType;
 }
 
 export interface serviceType {
     title: string;
     text: string;
-    banner?: string;
+    banner?: bannerType;
 }
 
 export interface serviceListType {

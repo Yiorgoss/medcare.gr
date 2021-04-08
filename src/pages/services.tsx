@@ -42,7 +42,7 @@ export default function Services() {
             <SideBar linkList={links} title="Services" />
             <div className="services-container container">
                 <div className="services-content">
-                    <Banner title={title} image={banner} />
+                    <Banner title={title} image={banner?.image ?? undefined} style={banner?.style ?? undefined} />
                     <div className="services-text" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
             </div>

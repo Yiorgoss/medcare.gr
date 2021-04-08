@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 
 //import logoHeader from "../assets/images/logo-header.svg";
-import logoSmall from "../assets/images/logo-small.svg"
+import logoSmall from "../assets/images/logo-small.svg";
+import logoHeader from "../assets/images/logo-header.svg";
 
 //import LogoSmall from "../logo.svg";
 
@@ -57,25 +58,25 @@ export default function Header() {
     }, [open]);
 
     return (
-        <section className={`header-wrapper ${open && "active"}`} ref={node}>
-            <div className="header-logo">
-                <a href="/">
-                    <img src={logoSmall} alt="Medcare Logo" />
-                </a>
+        <section className="header-container">
+            <div className={`header-wrapper ${open && "active"}`} ref={node}>
+                <div className="header-logo">
+                    <a href="/"></a>
+                </div>
+                <div className="header">
+                    <ul className="header-list">
+                        {headerLinks.map((link, index) => (
+                            <li key={index}>
+                                <Link to={link.path} onClick={() => setOpen(false)}>
+                                    {" "}
+                                    {link.title}{" "}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <MenuIcon onClick={() => setOpen(!open)} />
             </div>
-            <div className="header">
-                <ul className="header-list">
-                    {headerLinks.map((link, index) => (
-                        <li key={index}>
-                            <Link to={link.path} onClick={() => setOpen(false)}>
-                                {" "}
-                                {link.title}{" "}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <MenuIcon onClick={() => setOpen(!open)} />
         </section>
     );
 }

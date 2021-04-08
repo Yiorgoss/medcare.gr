@@ -1,20 +1,26 @@
 import React, { useState } from "react";
 
-export default function ImageOverlay({ image }: { image: string }) {
-    const [isOverlay, setOverlay] = useState(false)
+interface ImageOverlayProps {
+    image: string;
+    style?: React.CSSProperties;
+}
+export default function ImageOverlay({ image, style }: ImageOverlayProps) {
+    const [isOverlay, setOverlay] = useState(false);
 
     const toggleOverlay = () => {
-        setOverlay(!isOverlay)
-    }
+        setOverlay(!isOverlay);
+    };
+
+    const inline = {
+        ...style,
+        backgroundImage: `url("${require(`../../assets/images/${image}`).default}")`,
+    };
+
     return (
         <div
             className={`${isOverlay ? "show-overlay" : "overlay-image"}`}
             onClick={() => toggleOverlay()}
-            style={{
-                backgroundImage: `url("${
-                    require(`../../assets/images/${image}`).default
-                }")`,
-            }}
+            style={inline}
         ></div>
     );
 }

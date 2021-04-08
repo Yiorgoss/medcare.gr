@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { linkType } from "../../types";
 
 interface SideBarProps {
-    title: string
+    title: string;
     linkList: linkType[];
 }
 
@@ -14,9 +14,9 @@ export default function SideBar({ linkList, title }: SideBarProps) {
             <div className="sidebar-title">{title} Statements</div>
             <div className="sidebar-content-list">
                 <ul>
-                    {linkList.map((link) => (
-                        <li>
-                            <Link to={link.path}> {link.title} </Link>
+                    {linkList.map((link, index) => (
+                        <li key={index}>
+                            <Link to={link.path}>{link.title} </Link>
                         </li>
                     ))}
                 </ul>

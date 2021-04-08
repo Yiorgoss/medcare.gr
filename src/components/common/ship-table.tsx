@@ -58,7 +58,7 @@ const TableRow = ({ ship, index }: { ship: shipType; index: number }) => {
             </td>
             <td className={`expanded-row-content ${isHidden && "hidden"}`}>
                 {ship.images.map((image, index) => (
-                    <ImageOverlay image={image} key={index} />
+                    <ImageOverlay image={image.name} style={image.style} key={index} />
                 ))}
                 {ship.iframe && (
                     <Suspense fallback={<IFrameLoading />}>

@@ -8,29 +8,29 @@ import { statementListType } from "../types";
 
 const links = [
     {
-        title: 'History',
-        path: "/company/history"
+        title: "History",
+        path: "/company/history",
     },
     {
         title: "Mission Statement",
-        path: "/company/mission-statement"
+        path: "/company/mission-statement",
     },
     {
-        title: 'Quality',
-        path: "/company/quality"
+        title: "Quality",
+        path: "/company/quality",
     },
     {
-        title: 'Health, Safety and Environment',
-        path: "/company/health-safety"
+        title: "Health, Safety and Environment",
+        path: "/company/health-safety",
     },
     {
-        title: 'Whistleblower Policy',
-        path: "/company/whistleblower"
+        title: "Whistleblower Policy",
+        path: "/company/whistleblower",
     },
     {
-        title: 'Business Ethics Policy / Disciplinary Policy',
-        path: "/company/policies"
-    }
+        title: "Business Ethics Policy / Disciplinary Policy",
+        path: "/company/policies",
+    },
 ];
 
 export default function Company() {
@@ -47,7 +47,7 @@ export default function Company() {
             <SideBar linkList={links} title="Company" />
             <div className="company-container container">
                 <div className="company-content">
-                    <Banner title={title} image={banner} />
+                    <Banner title={title} image={banner?.image ?? undefined} style={banner?.style ?? undefined} />
                     <div className="company-text" dangerouslySetInnerHTML={{ __html: text }} />
                 </div>
             </div>

@@ -1,58 +1,74 @@
-.header-wrapper {
-    display: flex;
-    height: $header-height;
-    width: 100%;
-    justify-content: space-between;
-    position: fixed;
-    background-color: $white;
-    top: 0;
-    z-index: 100;
-    align-items: center;
-
-    -webkit-box-shadow: 5px 19px 50px -1px rgba(0, 0, 0, 0.57);
-    box-shadow: 5px 19px 50px -1px rgba(0, 0, 0, 0.57);
-
-    .header-logo {
-        height: 100px;
-        width: 120px;
-        margin-left: 50px;
-        margin-top: 40px;
-    }
-
-    .MuiSvgIcon-root {
-        font-size: 32px;
+.header-container {
+        position: fixed;
+        background-color: $white;
+        height: $header-height;
+        width: 100%;
+    .header-wrapper {
+        display: flex;
+        height: $header-height;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 500;
         align-items: center;
-        cursor: pointer;
-        display: none;
-    }
 
-    .header {
-        .header-list {
-            height: 100%;
-            margin: 0 60px 0 10px;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            padding-inline-start: 0;
-            display: flex;
-            justify-content: flex-end;
+        background: url("../images/logo-header.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;  
+        background-size: 100%;
+
+        -webkit-box-shadow: 5px 19px 50px -1px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 19px 50px -1px rgba(0, 0, 0, 0.57);
+
+        .header-logo {
+            top: 0;
+            left:  0;
+            height: 100px;
+            width: 10%;
+            
+            a{
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .MuiSvgIcon-root {
+            font-size: 32px;
             align-items: center;
-            list-style-type: none;
+            cursor: pointer;
+            display: none;
+        }
 
-            a {
-                text-decoration: none;
-                padding: 10px 20px 10px 20px;
-                color: $black;
-                font-size: $font-small;
-                font-weight: 400;
+        .header {
+            .header-list {
+                height: 100%;
+                margin: 0 60px 0 10px;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                padding-inline-start: 0;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                list-style-type: none;
 
-                &:visited {
+                a {
+                    text-decoration: none;
+                    padding: 10px 20px 10px 20px;
                     color: $black;
-                }
+                    font-size: $font-small;
+                    font-weight: 400;
 
-                &:hover {
-                    color: $white;
-                    background: $blue;
-                    border-radius: 7px;
+                    &:visited {
+                        color: $black;
+                    }
+
+                    &:hover {
+                        color: $white;
+                        background: $blue;
+                        border-radius: 7px;
+                    }
                 }
             }
         }

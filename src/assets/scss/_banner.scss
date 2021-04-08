@@ -3,6 +3,7 @@
 
     .banner {
         background-image: url("../images/ship_9.jpg");
+        background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
         background-size: cover;
@@ -20,8 +21,6 @@
             .title {
                 font-size: $font-large;
                 font-weight: 500;
-                background: rgba(0, 0, 0, 0.45);
-                padding: 20px 40px 10px 40px;
                 border-radius: 15px;
             }
         }

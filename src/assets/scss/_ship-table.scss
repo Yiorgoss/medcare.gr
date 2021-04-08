@@ -1,11 +1,14 @@
 .fleet {
     margin-top: 70px;
+    justify-content: space-around;
 
     .table-wrapper {
         margin-top: 70px;
 
         table {
-            margin: 50px 0;
+            width: 100%;
+            margin:0;
+            margin-top: 50px;
             border-collapse: collapse;
             border-spacing: 0;
         }

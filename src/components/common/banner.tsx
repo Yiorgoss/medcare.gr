@@ -1,12 +1,19 @@
 import React from "react";
 
-export default function Banner({ image, title }: { image?: string; title?: string }) {
-    let style = undefined;
+interface BannerProps {
+    title?: string;
+    image?: string;
+    style?: React.CSSProperties;
+}
+
+export default function Banner({ title, image, style }: BannerProps) {
     if (image) {
         style = {
+            ...style,
             backgroundImage: `url(${require(`../../assets/images/${image}`).default})`,
         };
     }
+
     return (
         <div className="banner-section">
             <div style={style} className="banner">

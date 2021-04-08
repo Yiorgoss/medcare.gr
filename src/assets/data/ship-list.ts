@@ -5,7 +5,22 @@ const shipList = [
         year: 2006,
         flag: "Malta",
         dwt: 40000,
-        images: ["libera_1.jpg", "libera_2.jpg", "libera_3.jpg", "libera_4.jpg"],
+        images: [
+            {
+                name: "libera_1.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 70%",
+                },
+            },
+            {
+                name: "libera_2.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 90%"
+                },
+            },
+        ],
     },
     {
         name: "Marvea",
@@ -13,7 +28,22 @@ const shipList = [
         year: 2006,
         flag: "Malta",
         dwt: 40000,
-        images: ["marvea_1.jpg", "marvea_2.jpg", "marvea_3.jpg"],
+        images: [
+            {
+                name: "marvea_1.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 100%"
+                },
+            },
+            {
+                name: "marvea_2.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 40%"
+                },
+            },
+        ],
         iframe: {
             title: "MARVEA",
             yturl: "https://www.youtube-nocookie.com/embed/ZCotz4-M0NQ",
@@ -25,7 +55,29 @@ const shipList = [
         year: 2009,
         flag: "Liberia",
         dwt: 55000,
-        images: ["ertea_1.jpg", "ertea_2.jpg", "ertea_3.jpg"],
+        images: [
+            {
+                name: "ertea_1.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 70%"
+                },
+            },
+            {
+                name: "ertea_2.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 100%"
+                },
+            },
+            {
+                name: "ertea_3.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 100%"
+                },
+            },
+        ],
     },
     {
         name: "Eraclea",
@@ -33,7 +85,15 @@ const shipList = [
         year: 2010,
         flag: "Liberia",
         dwt: 55000,
-        images: ["eraclea_1.jpg", "eraclea_2.jpg", "eraclea_3.jpg", "eraclea_4.jpg"],
+        images: [
+            {
+                name: "eraclea_4.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 80%"
+                },
+            },
+        ],
     },
     {
         name: "Serena M",
@@ -41,7 +101,15 @@ const shipList = [
         year: 2010,
         flag: "Malta",
         dwt: 40000,
-        images: ["serena_m_1.jpg"],
+        images: [
+            {
+                name: "serena_m_1.jpg",
+                //inline styles for selected image
+                style: {
+                    backgroundPosition: "center 100%"
+                },
+            },
+        ],
         iframe: {
             title: "SERENA M",
             yturl: "https://www.youtube-nocookie.com/embed/jFLU4kxDeYg",

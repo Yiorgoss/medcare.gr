@@ -5,7 +5,7 @@ $font-small: 14px;
 $header-height: 100px;
 
 $black: #0d0d0d;
-$white: #f2f2f2;
+$white: #ffffff;
 $grey: #7e7e7e;
 $blue: #23487e;
 
@@ -18,7 +18,7 @@ $text-secondary: #f2f2f2;
 $text-primary: #0d0d0d;
 
 
-$font-list:  -apple-system, Neuzeit, system, Roboto;
+$font-list:  Neuzeit, -apple-system, system, Roboto;
 @font-face {
   font-family: 'IBM Plex';
   src: local('IBM Plex'), url(../fonts/IBMPlexMono-Regular.woff2) format('woff2');

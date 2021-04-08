@@ -85,6 +85,13 @@
     }
 }
 
+@media screen and (min-width: 2000px) {
+    .header-container{
+        .header-wrapper {
+            background-position: right bottom;
+        }
+    } 
+}
 @media screen and (max-width: 900px) {
     .header-wrapper {
         background: $white;

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 
 //import logoHeader from "../assets/images/logo-header.svg";
-import logoSmall from "../assets/images/logo-small.svg";
-import logoHeader from "../assets/images/logo-header.svg";
+//import logoSmall from "../assets/images/logo-small.svg";
+//import logoHeader from "../assets/images/logo-header.svg";
 
 //import LogoSmall from "../logo.svg";
 
@@ -33,7 +33,7 @@ const headerLinks = [
 ];
 
 export default function Header() {
-    const node = useRef<HTMLElement>(null);
+    const node = useRef<HTMLDivElement>(null);
     const [open, setOpen] = useState<boolean>(false);
 
     const handleClickOutside = (e: MouseEvent) => {
@@ -61,7 +61,9 @@ export default function Header() {
         <section className="header-container">
             <div className={`header-wrapper ${open && "active"}`} ref={node}>
                 <div className="header-logo">
-                    <a href="/"></a>
+                    <a href="/">
+                        <i aria-hidden="true"> </i>
+                    </a>
                 </div>
                 <div className="header">
                     <ul className="header-list">

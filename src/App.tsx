@@ -10,9 +10,8 @@ import LoadingPage from "./components/loading-page";
 export default function App() {
     const [isLoading, setLoading] = useState(true);
 
-
     useEffect(() => {
-        setTimeout(() => setLoading(false), 20);
+        setTimeout(() => setLoading(false), 3500);
     }, []);
 
     return (
@@ -24,9 +23,21 @@ export default function App() {
                     <Header />
                     <Switch>
                         <Route exact path="/" render={() => <Home />} />
-                        <Route exact path="/company" render={() => <Company />} />
-                        <Route exact path="/services/:service" render={() => <Services />} />
-                        <Route exact path="/company/:statement" render={() => <Company />} />
+                        <Route
+                            exact
+                            path="/company"
+                            render={() => <Company />}
+                        />
+                        <Route
+                            exact
+                            path="/services/:service"
+                            render={() => <Services />}
+                        />
+                        <Route
+                            exact
+                            path="/company/:statement"
+                            render={() => <Company />}
+                        />
                         <Route path="/fleet" render={() => <Fleet />} />
                         <Route path="/contact" render={() => <Contact />} />
                         <Route render={(): any => 404} />

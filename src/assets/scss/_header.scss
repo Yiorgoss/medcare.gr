@@ -15,7 +15,7 @@
         z-index: 500;
         align-items: center;
 
-        background: url("../images/logo-header.svg");
+        background: url("../../assets/images/logo-header.svg");
         background-repeat: no-repeat;
         background-position: right center;
         background-size: 100%;
@@ -93,65 +93,72 @@
     } 
 }
 @media screen and (max-width: 900px) {
-    .header-wrapper {
-        background: $white;
-        height: $header-height;
-        display: flex;
-        justify-content: space-between;
-
-        .header-logo {
-            width: 70px;
-            height: auto;
-            margin: auto 0;
-            margin-left: 20px;
-            align-self: center;
-        }
-
-        .MuiSvgIcon-root {
+    .header-container{
+        .header-wrapper {
+            background: white;
+            height: $header-height;
             display: flex;
-            align-self: flex-start;
-            font-size: 36px;
-            align-self: center;
-            margin-right: 20px;
-        }
+            justify-content: space-between;
 
-        .header {
-            height: 100%;
-            width: 300px;
-            background: $white;
-            position: fixed;
-            left: -300px;
-            transition: 300ms ease left;
-            flex-direction: column-reverse;
-            top: $header-height;
+            .header-logo {
+                width: 70px;
+                height: auto;
+                margin: auto 0;
+                margin-left: 20px;
+                align-self: center;
+            }
 
-            .header-list {
-                flex-direction: column;
-                justify-content: flex-start;
-                margin: 0;
-                margin-top: 50px;
+            .MuiSvgIcon-root {
+                display: flex;
+                align-self: flex-start;
+                font-size: 36px;
+                align-self: center;
+                margin-right: 20px;
+            }
 
-                li {
-                    text-align: left;
-                    height: $header-height;
-                    display: flex;
-                    width: auto;
+            .header {
+                height: auto;
+                width: 300px;
+                background: $white;
+                color: black;
+                position: fixed;
+                left: -300px;
+                transition: 300ms ease left;
+                flex-direction: column-reverse;
+                top:0;
+                margin-top: $header-height;
+
+                .header-cover {
+                    display:none;
                 }
 
-                a {
-                    padding: 20px 15px;
-                    width: 100%;
+                .header-list {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    margin: 0;
 
-                    &:hover {
-                        background: none;
-                        color: $black;
+                    li {
+                        text-align: left;
+                        height: 100px;
+                        display: flex;
+                        width: auto;
+                    }
+
+                    a {
+                        padding: 20px 15px;
+                        width: 100%;
+
+                        &:hover {
+                            background: none;
+                            color: $black;
+                        }
                     }
                 }
             }
-        }
-        &.active {
-            .header {
-                left: 0px;
+            &.active {
+                .header {
+                    left: 0px;
+                }
             }
         }
     }

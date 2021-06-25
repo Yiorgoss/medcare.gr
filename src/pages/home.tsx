@@ -4,9 +4,11 @@ export default function Home() {
     const aboutdesc =
         " Medcare Shipping S.A. is a Shipping Company operating Tanker & Bulk Carrier Ships. The company supports the need for a comprehensive and effective Quality & Environmental management system to ensure that the services offered by this organization meet customer requirements.";
 
-    const servicedesc = "Medcare’s management services include operating, maintaining, crewing, and trading the vessels worldwide in a safe, efficient, economic and profitable way. The Management’s headquarters are located in Glyfada, Athens, Greece";
+    const servicedesc =
+        "Medcare’s management services include operating, maintaining, crewing, and trading the vessels worldwide in a safe, efficient, economic and profitable way. The Management’s headquarters are located in Glyfada, Athens, Greece";
 
-    const moredesc = "The Company Management System (CMS) is designed to operate within the requirements of ISO 9001:2008, ISO 14001:2004, the ISM code and the OCIMF TMSA.";
+    const moredesc =
+        "The Company Management System (CMS) is designed to operate within the requirements of ISO 9001:2008, ISO 14001:2004, the ISM code and the OCIMF TMSA.";
 
     return (
         <section className="landing">

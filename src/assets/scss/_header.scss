@@ -95,7 +95,7 @@
 @media screen and (max-width: 900px) {
     .header-container{
         .header-wrapper {
-            background: white;
+            background: $white;
             height: $header-height;
             display: flex;
             justify-content: space-between;
@@ -117,16 +117,17 @@
             }
 
             .header {
-                height: auto;
+                height: 100%;
                 width: 300px;
                 background: $white;
-                color: black;
+                color: $black;
                 position: fixed;
                 left: -300px;
                 transition: 300ms ease left;
                 flex-direction: column-reverse;
                 top:0;
                 margin-top: $header-height;
+                justify-content: flex-end;
 
                 .header-cover {
                     display:none;
@@ -134,7 +135,6 @@
 
                 .header-list {
                     flex-direction: column;
-                    justify-content: flex-start;
                     margin: 0;
 
                     li {

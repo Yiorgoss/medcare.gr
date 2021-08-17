@@ -40,15 +40,26 @@ export default function Company() {
     const url_params = useParams<{ statement: string }>();
     const params = (statementList as statementListType)[url_params.statement];
 
-    const { title, text, banner } = params ?? { title: "404", text: "Resource not found", banner: "" };
+    const { title, text, banner } = params ?? {
+        title: "404",
+        text: "Resource not found",
+        banner: "",
+    };
 
     return (
         <section className="company">
             <SideBar linkList={links} title="Company" />
             <div className="company-container container">
                 <div className="company-content">
-                    <Banner title={title} image={banner?.image ?? undefined} style={banner?.style ?? undefined} />
-                    <div className="company-text" dangerouslySetInnerHTML={{ __html: text }} />
+                    <Banner
+                        title={title}
+                        image={banner?.image ?? undefined}
+                        style={banner?.style ?? undefined}
+                    />
+                    <div
+                        className="company-text"
+                        dangerouslySetInnerHTML={{ __html: text }}
+                    />
                 </div>
             </div>
         </section>

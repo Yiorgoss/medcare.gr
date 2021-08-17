@@ -66,14 +66,19 @@ export default function Header() {
                     <ul className="header-list">
                         {headerLinks.map((link, index) => (
                             <li key={index}>
-                                <Link to={link.path} onClick={() => setOpen(false)}>
+                                <Link
+                                    to={link.path}
+                                    onClick={() => setOpen(false)}
+                                >
                                     {" "}
                                     {link.title}{" "}
                                 </Link>
                             </li>
                         ))}
                     </ul>
-                    <div className="header-cover"><i aria-hidden="true"> </i></div>
+                    <div className="header-cover">
+                        <i aria-hidden="true"> </i>
+                    </div>
                 </div>
                 <MenuIcon onClick={() => setOpen(!open)} />
             </div>

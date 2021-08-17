@@ -32,7 +32,7 @@
         background-image: url("../../assets/images/marvea_1.jpg");
     }
     .image-two {
-        background-image: url("../../assets/images/ship_9.jpg");
+        background-image: url("../../assets/images/ship-bow.jpg");
         height: 50vh;
     }
     .image-three {
@@ -44,12 +44,13 @@
 @media screen and (max-width: 900px) {
     .landing {
         .bg {
+            width: 100%;
             background-attachment: scroll;
-            background-size: 120% 100%;
+            background-size:cover; 
             background-position: center center;
         }
         .image-one {
-            background-image: url("../../assets/images/ship_5.jpg");
+            background-image: url("../../assets/images/ship-medcare-logo.jpg");
         }
         .image-two {
             background-image: url("../../assets/images/ship_9.jpg");
